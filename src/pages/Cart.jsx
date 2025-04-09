@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { useCart } from "./CartContext";
 import { Link } from "react-router-dom";
 
@@ -8,6 +9,9 @@ export default function CartPage() {
     (sum, item) => sum + item.price * item.quantity,
     0
   );
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
 
   return (
     <div className="max-w-5xl mx-auto px-4 py-10">
