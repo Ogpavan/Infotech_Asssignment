@@ -30,7 +30,7 @@ export default function NewArrivals() {
         Discover the latest additions to our store
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 gap-y-10">
+      <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 gap-y-10">
         {products.map((item) => (
           <div key={item.id}>
             {" "}
@@ -42,7 +42,7 @@ export default function NewArrivals() {
                   alt={item.name}
                   className="w-full h-auto object-contain mb-2 max-h-52 hover:scale-105 transition-transform duration-300 ease-in-out"
                 />
-                <div className="md:px-2 flex flex-col items-center md:items-start">
+                <div className="md:px-1 flex flex-col  items-start">
                   <p className="text-gray-600 text-sm">{item.category}</p>
                   <h3 className="text-lg font-semibold">{item.name}</h3>
                   <p className="text-gray-600">$ {item.price}</p>
