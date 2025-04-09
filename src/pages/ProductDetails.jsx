@@ -109,7 +109,7 @@ export default function ProductDetails() {
           </div>
 
           {/* Buttons */}
-          <div className="flex gap-4 items-center">
+          <div className="flex gap-4 items-center justify-between md:justify-normal">
             {added ? (
               <div className="text-green-600 font-medium animate-fade-in-out">
                 ✅ Added!
