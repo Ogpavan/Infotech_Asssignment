@@ -36,7 +36,7 @@ export default function NewArrivals() {
             {" "}
             {/* ✅ move key here */}
             <Link to={`/product/${item.id}`} className="block  duration-200">
-              <div className="flex justify-between flex-col items-center md:items-start mb-2">
+              <div className="flex justify-between flex-col   md:items-start mb-2">
                 <img
                   src={item.imageUrl}
                   alt={item.name}
